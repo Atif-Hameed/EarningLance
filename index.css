@@ -91,7 +91,21 @@ body {
     padding-right: 6rem;
 }
 .data-sec{
-    padding: 5rem 2rem;
+    padding: 5rem 7rem;
+}
+.card-img{
+    background-image: url('./assets/card-bg.svg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.register-btn{
+    width: 16rem;
+    font-size: 0.9rem;
+}
+.reviw-head{
+    font-size: 2rem;
 }
 
 /* Medium Screen */
@@ -102,6 +116,9 @@ body {
     }
     .hero-img{
         height: 20rem;
+    }
+    .data-sec{
+        padding: 5rem 1rem;
     }
 }
 
