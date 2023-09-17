@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
@@ -17,6 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto&display=swap"
         rel="stylesheet">
@@ -25,7 +30,7 @@
 </head>
 
 <body>
-    < class="bg-parent">
+    <div class="bg-parent">
         <div class="bg-img px-lg-5">
 
             <!-- NAVBAR -->
@@ -117,7 +122,7 @@
 
         </div>
 
-        <!-- SECTION-1 -->
+        <!-- LOCATION -->
         <div class="container-fluid py-sm-5 py-3 px-5">
             <div class="row mx-0 py-4 d-flex align-items-center">
                 <div class="col-sm d-flex justify-content-center px-0">
@@ -145,7 +150,7 @@
             </div>
         </div>
 
-        <!-- SECTION-2 -->
+        <!-- UNLOCK EARNING -->
         <div class="data-sec" style="background-color: #F5F5F5;">
 
             <div class="d-flex flex-column justify-content-center align-items-center">
@@ -184,7 +189,7 @@
             </div>
         </div>
 
-        <!-- SECTION-3 -->
+        <!-- PLANS -->
         <div class="data-sec" style="background-color: #fff;">
 
             <div class="d-flex flex-column justify-content-center align-items-center">
@@ -306,67 +311,259 @@
                 </div>
             </div>
 
-            <div class="d-flex w-100 justify-content-sm-between justify-content-center px-sm-5 px-3 pt-5 pb-4 mt-5 flex-sm-nowrap flex-wrap" style="box-shadow: 0px 8px 8px -4px #10182808;box-shadow: 0px 20px 24px -4px #10182814;">
+            <div class="d-flex w-100 justify-content-sm-between justify-content-center px-sm-5 px-3 pt-5 pb-4 mt-5 flex-sm-nowrap flex-wrap"
+                style="box-shadow: 0px 8px 8px -4px #10182808;box-shadow: 0px 20px 24px -4px #10182814;">
                 <div class=" ">
                     <p class="h5">Get in touch with us anytime.</p>
                     <p>We're always here for you. Contact us today.</p>
                 </div>
                 <div class="">
                     <a href="" class="">
-                        <button class="border-0 btn btn-danger py-3 register-btn" style="border-radius: 25px;background-color: #DEAD00;">Register Now</button>
+                        <button class="border-0 btn btn-danger py-3 register-btn"
+                            style="border-radius: 25px;background-color: #DEAD00;">Register Now</button>
                     </a>
                 </div>
 
             </div>
         </div>
 
-        <!-- SECTION-4 -->
-        <div style="background-color: #373737;">
-            <div>
+        <!-- CUSTOMER REVIEWS -->
+        <div class="reviews" style="background-color: #373737;">
+            <div class="review-txt">
                 <p style="color: #DEAD00;">Our Client Reviews</p>
-                <p class="reviw-head mb-0" style="color: white;">See What People are Saying<br> About Earninglance</p>
+                <p class="reviw-head mb-0" style="color: white;">See What People Are Saying<br> About Earninglance</p>
+            </div>
+
+            <div class="container mt-5 px-0">
+
+                <!-- CAROUSEL -->
+                <div class="w-100">
+                    <div class="owl-carousel owl-theme w-100">
+                        <div class="">
+                            <div class="card bg-transparent" style="border: 1px solid #4A4A4A; border-radius: 15px;">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                    </div>
+                                    <p class="mt-2" style="color: #848484;">"NuVision's team of experts provided
+                                        exceptional
+                                        software development services that exceeded our expectations."</p>
+                                    <div class="d-flex align-items-center mt-sm-0 mt-4">
+                                        <img src="./assets/avatar-1.svg" style="width: 3rem;" alt="">
+                                        <div class="ml-2">
+                                            <p class="mb-1 h6" style="color: white;">Craig Aminoff</p>
+                                            <p class="mb-0" style="font-size: 0.8rem;color: #848484;">Satisfied Client
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card bg-transparent" style="border: 1px solid #4A4A4A; border-radius: 15px;">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                    </div>
+                                    <p class="mt-2" style="color: #848484;">"NuVision's team of experts provided
+                                        exceptional
+                                        software development services that exceeded our expectations."</p>
+                                    <div class="d-flex align-items-center mt-sm-0 mt-4">
+                                        <img src="./assets/avatar-1.svg" style="width: 3rem;" alt="">
+                                        <div class="ml-2">
+                                            <p class="mb-1 h6" style="color: white;">Craig Aminoff</p>
+                                            <p class="mb-0" style="font-size: 0.8rem;color: #848484;">Satisfied Client
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card bg-transparent" style="border: 1px solid #4A4A4A; border-radius: 15px;">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                    </div>
+                                    <p class="mt-2" style="color: #848484;">"Their technical expertise, and commitment
+                                        to delivering high-quality results made them an excellent partner for our
+                                        software development"</p>
+                                    <div class="d-flex align-items-center mt-sm-0 mt-4">
+                                        <img src="./assets/Avatar-2.svg" style="width: 3rem;" alt="">
+                                        <div class="ml-2">
+                                            <p class="mb-1 h6" style="color: white;">Cheyenne Aminoff</p>
+                                            <p class="mb-0" style="font-size: 0.8rem;color: #848484;">Satisfied Client
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card bg-transparent" style="border: 1px solid #4A4A4A; border-radius: 15px;">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                    </div>
+                                    <p class="mt-2" style="color: #848484;">"NuVision's team of experts provided
+                                        exceptional
+                                        software development services that exceeded our expectations."</p>
+                                    <div class="d-flex align-items-center mt-sm-0 mt-4">
+                                        <img src="./assets/Avatar-3.svg" style="width: 3rem;" alt="">
+                                        <div class="ml-2">
+                                            <p class="mb-1 h6" style="color: white;">Alfonso Dorwart</p>
+                                            <p class="mb-0" style="font-size: 0.8rem;color: #848484;">Satisfied Client
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="card bg-transparent" style="border: 1px solid #4A4A4A; border-radius: 15px;">
+                                <div class="card-body">
+                                    <div>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FEC84B;"></i>
+                                    </div>
+                                    <p class="mt-2" style="color: #848484;">"NuVision's team of experts provided
+                                        exceptional
+                                        software development services that exceeded our expectations."</p>
+                                    <div class="d-flex align-items-center mt-sm-0 mt-4">
+                                        <img src="./assets/avatar-1.svg" style="width: 3rem;" alt="">
+                                        <div class="ml-2">
+                                            <p class="mb-1 h6" style="color: white;">Craig Aminoff</p>
+                                            <p class="mb-0" style="font-size: 0.8rem;color: #848484;">Satisfied Client
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- CONTACT US -->
+        <div>
+            <div class="container py-5">
+                <div class="row d-flex align-items-center">
+                    <div class="col-sm d-flex justify-content-center">
+                        <img src="./assets/doc.svg" class="doc-img" alt="">
+                    </div>
+                    <div class="col-sm px-sm-5 px-3 mt-lg-0 mt-4">
+                        <p class="h2 pr-3">Our team would love to hear from you.</p>
+                        <div class="w-100 mt-4">
+                            <div class="mb-3 d-flex justify-content-between flex-sm-nowrap flex-wrap">
+                                <div class="d-flex flex-column w-100">
+                                    <label for="">First Name</label>
+                                    <input type="text" class="px-3"
+                                        style="height: 2.5rem;border-radius: 20px;border: 1px solid gray;"
+                                        placeholder="First Name" name="" id="">
+                                </div>
+                                <div class="d-flex flex-column ml-sm-4 ml-0 mt-sm-0 mt-3 w-100">
+                                    <label for="">Last Name</label>
+                                    <input type="text" class="px-3"
+                                        style="height: 2.5rem;border-radius: 20px;border: 1px solid gray;"
+                                        placeholder="Last Name" name="" id="">
+                                </div>
+                            </div>
+                            <div class="mb-3  d-flex flex-column">
+                                <label for="">Email</label>
+                                <input type="email" class="px-3"
+                                    style="height: 2.5rem;border-radius: 20px;border: 1px solid gray;"
+                                    placeholder="you@company.com" name="" id="">
+                            </div>
+                            <div class="mb-3 d-flex flex-column">
+                                <label for="">Phone number</label>
+                                <input type="tel" class="px-3"
+                                    style="height: 2.5rem;border-radius: 20px;border: 1px solid gray;"
+                                    placeholder="+1 (555) 000-0000" name="" id="">
+                            </div>
+                            <div class="mb-3 d-flex flex-column">
+                                <label for="">Message</label>
+                                <textarea name="message" class="w-100" style="border-radius: 25px;" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <a href="#" class="w-100">
+                            <button class="border-0 w-100 py-3"
+                                style="border-radius: 30px;background-color: #DEAD00;color: white;">Send
+                                message</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- FOOTER -->
+        <div class="px-5 pt-5 pb-3" style="background-color: #1F1F1F;">
+            <div class="px-4 d-flex justify-content-center flex-column align-items-center">
+                <div class="d-flex align-items-center mb-4">
+                    <img src="./assets/logo.svg" style="width: 2rem;" alt="">
+                    <h2 class="" style="color: #fff;">Earninglance</h2>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <p class="mx-3 font-weight-light" style="color: white;">Home</p>
+                    <p class="mx-3 font-weight-light" style="color: white;">About Us</p>
+                    <p class="mx-3 font-weight-light" style="color: white;">Services</p>
+                    <p class="mx-3 font-weight-light" style="color: white;">Join Us</p>
+                    <p class="mx-3 font-weight-light" style="color: white;">Blogs</p>
+                    <p class="mx-3 font-weight-light" style="color: white;">Privacy</p>
+                </div>
+                <div class="mb-3" style="width: 100%; height: 2px; background-color: #fff;" ></div>
+                <div class="d-flex justify-content-between w-100">
+                    <p class="font-weight-light" style="color: white;">© 2023 U&T Services. All rights reserved.</p>
+                    <div class="d-flex">
+                        <p class="mx-2" style="color: white;">Terms</p>
+                        <p class="mx-2" style="color: white;">Privacy</p>
+                        <p class="mx-2" style="color: white;">Cookies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
-    <!-- NAVBAR -->
-    <!-- <div class="d-flex align-items-center justify-content-around">
-                <div class="d-flex align-items-center">
-                    <img src="./assets/logo.svg" class="logo" alt="">
-                    <p class="ml-1 h4 font-weight-bold">Earninglance</p>
-                </div>
-                <div class="d-flex mt-4 h6 align-items-center">
-                    <p class="mx-3">Home</p>
-                    <p class="mx-3">About</p>
-                    <p class="mx-3">Plans</p>
-                    <p class="mx-3">Contact</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <a href="Login.html" class="link-style mx-3">
-                        <div class="d-flex align-items-center justify-content-center px-3 py-1"
-                            style="border: 1px solid black;border-radius: 15px;">
-                            <img src="./assets/person.svg" class="mx-1" style="height: 0.8rem;" alt="">
-                            <p class="my-auto h6 mx-1 mb-0">Login</p>
-                        </div>
-                    </a>
-                    <a href="SignUp.html" class="link-style mx-3">
-                        <div class="px-3 py-1"
-                            style="background-color: #DEAD00; width: fit-content;color: white; border-radius: 15px;">
-                            <p class="mb-0 h6" style="font-family: 'Roboto';">Register</p>
-                        </div>
-                    </a>
-                </div>
-
-            </div> -->
-
-
-
-
-    </div>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 40,
+            dots: false,
+            nav: true,
+            navText: ["<i class='fa-solid fa-arrow-right left-arrow'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
