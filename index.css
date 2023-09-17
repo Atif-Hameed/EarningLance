@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg-parent {
+    height: 100vh;
+    width: 100%;
+}
+.logo {
+    height: 2rem;
+}
+.bg-img {
+    background-image: url('./assets//background.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.nav-width{
+    width: 65%;
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: #DEAD00;
+    text-decoration: none;
+}
+
+.form-width {
+    width: 45%;
+}
+
+.link-style {
+    color: black;
+}
+
+.link-style:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.submit-btn {
+    width: 35%;
+}
+.select-icon{
+    height: 1.2rem;
+}
+.register{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.hero{
+    margin-top: 4rem;
+}
+.hero-text{
+    padding-right: 9rem;
+}
+.hero-heading{
+    font-size: 1.4rem;
+    font-weight:600;
+}
+.hero-img{
+    height: 27rem;
+}
+.learn-more{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.loc{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.loc-head{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.loc-text{
+    font-size: 1.1rem;
+}
+.loc-img{
+    height: 30rem;
+}
+.loc-content{
+    padding-right: 6rem;
+}
+.data-sec{
+    padding: 5rem 2rem;
+}
+
+/* Medium Screen */
+
+@media screen and (max-width: 992px) {
+    .hero-text{
+        padding-right: 0;
+    }
+    .hero-img{
+        height: 20rem;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .form-width {
+        width: 70%;
+    }
+    .nav-width{
+        width: auto;
+    }
+}
+
+/* Small Screen */
+@media screen and (max-width: 576px) {
+    .form-width {
+        width: 100%;
+    }
+    .register{
+        font-size: 0.5rem;
+    }
+    .submit-btn {
+        width: 100%;
+    }
+    .logo-head{
+        font-size: 1.1rem;
+    }
+    .hero-text{
+        padding-right: 0;
+    }
+    .learn-more{
+        font-size: 0.9rem;
+    }
+    .btn{
+        font-size: 0.9rem;
+    }
+    .hero-img{
+        height: 22rem;
+    }
+    .loc-img{
+        height: 20rem;
+    }
+    .loc-content{
+        padding-right: 0rem;
+    }
+    .logo {
+        height: 1.5rem;
+        margin-top: 0.1rem;
+    }
+}
