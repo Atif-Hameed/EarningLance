@@ -35,7 +35,7 @@
 
             <!-- NAVBAR -->
             <div
-                class="d-flex align-items-lg-center align-items-start justify-content-between px-lg-5 px-3 pt-sm-3 pt-1">
+                class=" d-flex align-items-lg-center align-items-start justify-content-between px-lg-5 px-3 pt-sm-3 pt-1">
                 <div class="d-flex align-items-center mt-lg-0 mt-2 pt-sm-0 pt-1">
                     <img src="./assets/logo.svg" class="logo" alt="">
                     <p class="ml-1 d-sm-block h3 d-none font-weight-bold">Earninglance</p>
@@ -58,24 +58,27 @@
                         </a>
                     </div>
                     <nav class="navbar navbar-expand-lg p-0 mt-lg-0 mt-2 pt-lg-0 pt-2">
-                        <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
+                        
+                        <button class="navbar-toggler custom-toggle p-0" type="button" data-toggle="collapse"
                             data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarText">
+                        
+
+                        <div class="collapse navbar-collapse custom-nav" id="navbarText">
                             <ul class="navbar-nav mr-0">
                                 <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#">Home </a>
+                                    <a class="nav-link" href="#home">Home </a>
                                 </li>
                                 <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#">About </a>
+                                    <a class="nav-link" href="#about">About </a>
                                 </li>
                                 <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#">Plans </a>
+                                    <a class="nav-link" href="#plans">Plans </a>
                                 </li>
                                 <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#">Contact </a>
+                                    <a class="nav-link" href="#contact">Contact </a>
                                 </li>
                             </ul>
                         </div>
@@ -85,7 +88,7 @@
 
 
             <!-- HERO -->
-            <div class="hero px-lg-4 px-3">
+            <div id="home" class="hero px-lg-4 px-3">
                 <div class="row d-flex mx-0 align-items-center justify-content-between w-100">
                     <div class="col-sm px-0">
                         <div class="hero-text">
@@ -190,7 +193,7 @@
         </div>
 
         <!-- PLANS -->
-        <div class="data-sec" style="background-color: #fff;">
+        <div id="plans" class="data-sec" style="background-color: #fff;">
 
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <p class="h5 mb-sm-2 mb-3" style="color: black;">Unlock your Earning Potential</p>
@@ -200,7 +203,7 @@
                     financial excellence. </p>
             </div>
 
-            <div class="row mt-sm-5 mt-3 pt-sm-5 pt-3">
+            <div class="row mt-sm-5 mt-3 pt-sm-5 pt-3 mb-5">
                 <div class="col-sm d-flex align-items-center px-lg-4 px-sm-2 px-4 mt-sm-0 mt-4">
                     <div class="card border-0 card-img py-3 " style="border-radius: 25px;">
                         <div class="card-body d-flex justify-content-center">
@@ -311,24 +314,27 @@
                 </div>
             </div>
 
-            <div class="d-flex w-100 justify-content-sm-between justify-content-center px-sm-5 px-3 pt-5 pb-4 mt-5 flex-sm-nowrap flex-wrap"
-                style="box-shadow: 0px 8px 8px -4px #10182808;box-shadow: 0px 20px 24px -4px #10182814;">
-                <div class=" ">
-                    <p class="h5">Get in touch with us anytime.</p>
-                    <p>We're always here for you. Contact us today.</p>
+            <div class="w-100 h-100 position-relative">
+                <div class="get-touch w-100">
+                    <div class="d-flex w-100 justify-content-sm-between justify-content-center px-sm-5 px-3 pt-5 pb-4 mt-5 flex-sm-nowrap flex-wrap"
+                        style="box-shadow: 0px 8px 8px -4px #10182808;box-shadow: 0px 20px 24px -4px #10182814;background-color: #fff;border-radius: 10px;">
+                        <div class=" ">
+                            <p class="h5">Get in touch with us anytime.</p>
+                            <p>We're always here for you. Contact us today.</p>
+                        </div>
+                        <div class="">
+                            <a href="" class="">
+                                <button class="border-0 btn btn-danger py-3 register-btn"
+                                    style="border-radius: 25px;background-color: #DEAD00;">Register Now</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="">
-                    <a href="" class="">
-                        <button class="border-0 btn btn-danger py-3 register-btn"
-                            style="border-radius: 25px;background-color: #DEAD00;">Register Now</button>
-                    </a>
-                </div>
-
             </div>
         </div>
 
         <!-- CUSTOMER REVIEWS -->
-        <div class="reviews" style="background-color: #373737;">
+        <div id="about" class="reviews" style="background-color: #373737;z-index: 2;">
             <div class="review-txt">
                 <p style="color: #DEAD00;">Our Client Reviews</p>
                 <p class="reviw-head mb-0" style="color: white;">See What People Are Saying<br> About Earninglance</p>
@@ -466,7 +472,7 @@
 
         <!-- CONTACT US -->
         <div>
-            <div class="container py-5">
+            <div id="contact" class="container py-5">
                 <div class="row d-flex align-items-center">
                     <div class="col-sm d-flex justify-content-center">
                         <img src="./assets/doc.svg" class="doc-img" alt="">
@@ -516,24 +522,24 @@
         </div>
 
         <!-- FOOTER -->
-        <div class="px-5 pt-5 pb-3" style="background-color: #1F1F1F;">
-            <div class="px-4 d-flex justify-content-center flex-column align-items-center">
+        <div class="px-sm-5 pt-5 pb-3" style="background-color: #1F1F1F;">
+            <div class="px-sm-4 px-3 d-flex justify-content-center flex-column align-items-center">
                 <div class="d-flex align-items-center mb-4">
                     <img src="./assets/logo.svg" style="width: 2rem;" alt="">
                     <h2 class="" style="color: #fff;">Earninglance</h2>
                 </div>
-                <div class="d-flex align-items-center mb-3">
-                    <p class="mx-3 font-weight-light" style="color: white;">Home</p>
-                    <p class="mx-3 font-weight-light" style="color: white;">About Us</p>
-                    <p class="mx-3 font-weight-light" style="color: white;">Services</p>
-                    <p class="mx-3 font-weight-light" style="color: white;">Join Us</p>
-                    <p class="mx-3 font-weight-light" style="color: white;">Blogs</p>
-                    <p class="mx-3 font-weight-light" style="color: white;">Privacy</p>
+                <div class="d-flex align-items-center mb-3 flex-wrap">
+                    <p class="mx-sm-3 mx-1 font-weight-light" style="color: white;">Home</p>
+                    <p class="mx-sm-3 mx-1 font-weight-light" style="color: white;">About Us</p>
+                    <p class="mx-sm-3 mx-1 font-weight-light" style="color: white;">Services</p>
+                    <p class="mx-sm-3 mx-1 font-weight-light" style="color: white;">Join Us</p>
+                    <p class="mx-sm-3 mx-1 font-weight-light" style="color: white;">Blogs</p>
+                    <p class="mx-sm-3 mx-1 font-weight-light" style="color: white;">Privacy</p>
                 </div>
-                <div class="mb-3" style="width: 100%; height: 2px; background-color: #fff;" ></div>
-                <div class="d-flex justify-content-between w-100">
+                <div class="mb-3" style="width: 100%; height: 2px; background-color: #fff;"></div>
+                <div class="d-flex justify-content-between w-100 flex-wrap">
                     <p class="font-weight-light" style="color: white;">© 2023 U&T Services. All rights reserved.</p>
-                    <div class="d-flex">
+                    <div class="d-flex ">
                         <p class="mx-2" style="color: white;">Terms</p>
                         <p class="mx-2" style="color: white;">Privacy</p>
                         <p class="mx-2" style="color: white;">Cookies</p>
@@ -541,6 +547,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -563,6 +570,24 @@
                 }
             }
         })
+    </script>
+    <script>
+        // JavaScript to toggle the element's position
+        const toggleButton = document.getElementById('toggleButton');
+        const hiddenElement = document.getElementById('hiddenElement');
+
+        let isHidden = true;
+
+        toggleButton.addEventListener('click', () => {
+            if (isHidden) {
+                // Show the hidden element
+                hiddenElement.style.right = '0';
+            } else {
+                // Hide the element again
+                hiddenElement.style.right = '-8rem';
+            }
+            isHidden = !isHidden; // Toggle the state
+        });
     </script>
 </body>
 

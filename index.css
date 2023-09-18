@@ -3,6 +3,7 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
 .bg-parent {
     height: 100vh;
     width: 100%;
@@ -145,6 +146,19 @@ body {
     width: 30rem;
 }
 
+.get-touch{
+    position: absolute;
+    bottom: -8rem;
+    left: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.custom-nav{
+    position: relative;
+}
+
 /* Medium Screen */
 
 @media screen and (max-width: 992px) {
@@ -222,6 +236,16 @@ body {
     }
     .doc-img{
         width: 22rem;
+    }
+    .custom-nav{
+        position:absolute;
+        top: 3rem;
+        right: 0;
+        background-color: #000;
+        z-index: 10;
+    }
+    .nav-link{
+        color: white;
     }
     
 }
