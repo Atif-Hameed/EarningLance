@@ -172,6 +172,11 @@ html {
 .footer-nav:hover{
     color: #DEAD00;
 }
+.back-home{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* Large Screen */
 

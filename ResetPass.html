@@ -12,24 +12,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css" />
     <title>earninglance</title>
 </head>
 
 <body>
     <div class="bg-parent">
-        <div class="bg-img d-flex justify-content-center align-items-center">
-            <div class="d-flex py-sm-0 py-4 flex-column justify-content-sm-center justify-content-around h-100 form-width px-md-0 px-3">
+        <div class="bg-img d-flex justify-content-center align-items-center position-relative">
+            <a href="/index.html" class="d-flex align-items-center back-home link-style m-3">
+                <i class="fa-solid fa-arrow-up ml-2 mt-1" style="transform: rotate(270deg);color: black;"></i>
+                <p class="mb-0 learn-more mx-3 " style="color: black;">Back to Home Page</p>
+            </a>
+            <div
+                class="d-flex py-sm-0 py-4 flex-column justify-content-sm-center justify-content-around h-100 form-width px-md-0 px-3">
                 <div class="d-flex flex-column">
                     <p class="text-center h4 my-2">Set New Password</p>
-                    <p class="text-center h6 my-3" style="font-size: 0.9rem;">You’ll receive an email with password Reset Link valid for 15 minutes.</p>
+                    <p class="text-center h6 my-3" style="font-size: 0.9rem;">You’ll receive an email with password
+                        Reset Link valid for 15 minutes.</p>
                     <div class="d-flex flex-column ">
-                        <input class="my-3 px-3 border-0" style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="password" name=""
-                            placeholder="Your Email Address" id="">
+                        <input class="my-3 px-3 border-0"
+                            style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="password"
+                            name="" placeholder="Your Email Address" id="">
                     </div>
                 </div>
                 <div class="mt-4 align-self-center d-flex w-100 flex-column justify-content-center align-items-center">
-                    
+
                     <a href="./SetPass.html" class="link-style h6 submit-btn" style="color: white;">
                         <button class="border-0 py-3 w-100"
                             style="border-radius: 13px;background-color: black;color: white;">

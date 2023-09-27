@@ -12,51 +12,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css" />
     <title>earninglance</title>
 </head>
 
 <body>
     <div class="bg-parent">
-        <div class="bg-img d-flex justify-content-center align-items-center">
+        <div class="bg-img d-flex justify-content-center align-items-center position-relative">
+            <a href="/index.html" class="d-flex align-items-center back-home link-style m-3">
+                <i class="fa-solid fa-arrow-up ml-2 mt-1" style="transform: rotate(270deg);color: black;"></i>
+                <p class="mb-0 learn-more mx-3 " style="color: black;">Back to Home Page</p>
+            </a>
             <div
                 class="d-flex py-sm-0 py-4 flex-column justify-content-sm-center justify-content-between h-100 form-width px-md-0 px-3">
                 <div class="d-flex flex-column">
                     <p class="text-center h4 my-3">Register Now!</p>
 
-                    <div class="container">
+                    <div class="form">
                         <div class="row">
                             <div class="col-12 justify-content-between d-flex flex-sm-nowrap flex-wrap">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="text"
                                     name="" placeholder="First Name" id="">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="text"
                                     name="" placeholder="Last Name" id="">
                             </div>
                             <div class="col-12 justify-content-between d-flex flex-sm-nowrap flex-wrap">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="text"
                                     name="" placeholder="Email Address" id="">
-                                <!-- <input type="text" placeholder="User Name" class="form-control is-valid" id="validationServer01" value="Mark"
-                                    required> -->
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2  form-control is-valid"
+
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="text"
-                                    name="" placeholder="User Name" value="" id="validationServer01">
+                                    name="" placeholder="User Name" id="">
                             </div>
                             <div class="col-12 justify-content-between d-flex flex-sm-nowrap flex-wrap">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
-                                    style="color: black; height: 3.3rem;border-radius: 12px;outline: none;"
-                                    type="number" name="" placeholder="Phone Number" id="">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
+                                    style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="tel"
+                                    name="" placeholder="Phone Number" id="">
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;" type="text"
                                     name="" placeholder="Referal User Name" id="">
                             </div>
                             <div class="col-12 justify-content-between d-flex flex-sm-nowrap flex-wrap">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;"
                                     type="password" name="" placeholder="Password" id="">
-                                <input class="my-lg-3 my-2 px-3 border-0 w-100 mx-2"
+                                <input class="my-lg-3 my-2 form-control px-3 border-0 w-100 mx-2"
                                     style="color: black; height: 3.3rem;border-radius: 12px;outline: none;"
                                     type="password" name="" placeholder="Confirm Password" id="">
                             </div>
