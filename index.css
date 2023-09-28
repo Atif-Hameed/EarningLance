@@ -177,12 +177,28 @@ html {
     top: 0;
     left: 0;
 }
+.get-text{
+    font-size: 1.75rem;
+}
 
 /* Large Screen */
 
 @media screen and (max-width: 1024px) {
     .form-width {
         width: 75%;
+    }
+    .hero-text{
+        padding-right: 6rem;
+    }
+    .bg-parent {
+        height: 100vh;
+        width: 100%;
+    }
+    .loc-content{
+        padding-right: 3rem;
+    }
+    .unlock-text{
+        width: 65%;
     }
 }
 
@@ -191,7 +207,7 @@ html {
 
 @media screen and (max-width: 992px) {
     .bg-parent {
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     .hero-text{
@@ -206,6 +222,23 @@ html {
     .input-h{
         height: 2.7rem;
     }
+    .unlock-text{
+        width: 73%;
+    }
+    .unlock-Icon{
+        width: 3.5rem;
+    }
+    .get-touch{
+        position: absolute;
+        bottom: -8rem;
+        left: 0;
+    }
+    .reviews{
+        padding: 6rem 4rem;
+    }
+    .owl-nav {
+        bottom: -4rem; 
+    }
     
 }
 
@@ -216,6 +249,10 @@ html {
     }
     .nav-width{
         width: auto;
+    }
+    .bg-parent {
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -251,20 +288,28 @@ html {
     .loc-content{
         padding-right: 0rem;
     }
+    .unlock-text{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .data-sec{
+        padding: 3rem 1rem;
+    }
+    .get-text{
+        font-size: 1.25rem;
+    }
     .logo {
         height: 1.5rem;
         margin-top: 0.1rem;
     }
     .reviews{
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
+    }
+    .owl-nav {
+        bottom: 0; 
     }
     .reviw-head{
         font-size: 1.6rem;
-    }
-    .owl-nav {
-        position: absolute;
-        bottom: -4rem; 
-        left: 10px;
     }
     .review-txt{
         margin-top: 1rem;
@@ -283,4 +328,11 @@ html {
         color: white;
     }
     
+}
+
+/* Extra Small */
+@media screen and (max-width: 370px) {
+    .get-text{
+        font-size: 1rem;
+    }
 }
