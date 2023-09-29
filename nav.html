@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navbar Toggle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            /* Change this to -100% to hide the navbar off-screen */
+            height: 100%;
+            width: 50%;
+            background-color: #333;
+            color: #fff;
+            transition: right 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        nav:not(.collapsed) {
+            right: 0;
+            /* Change this to 0 to slide the navbar in */
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 2;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #toggleButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="toggleButton">Toggle Navbar</button>
+    <nav id="navbar" class="collapsed">
+        <a class="nav-link" href="#home">Home </a>
+        <a class="nav-link" href="#home">Home </a>
+        <a class="nav-link" href="#home">Home </a>
+        <a class="nav-link" href="#home">Home </a>
+    </nav>
+    <div id="overlay" class="hidden"></div>
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navbar = document.getElementById('navbar');
+        const overlay = document.getElementById('overlay');
+
+        toggleButton.addEventListener('click', () => {
+            if (navbar.classList.contains('collapsed')) {
+                navbar.classList.remove('collapsed');
+                overlay.classList.remove('hidden');
+            } else {
+                navbar.classList.add('collapsed');
+                overlay.classList.add('hidden');
+            }
+        });
+
+        overlay.addEventListener('click', () => {
+            navbar.classList.add('collapsed');
+            overlay.classList.add('hidden');
+        });
+
+        // Prevent clicks on the navbar from closing it
+        navbar.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -7,6 +7,12 @@ body {
 .bg-parent {
     height: 100vh;
     width: 100%;
+    overflow: hidden;
+}
+.bg-parent2 {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 .logo {
     height: 2rem;
@@ -18,9 +24,20 @@ body {
     width: 100%;
     height: 100%;
 }
-.nav-width{
-    width: 65%;
+
+.nav-bar{
+    position: absolute;
+    top: 20;
+    transition: all 0.3s;
+    background-color: black;
+    width: 100%;
+    height: 100%;
 }
+
+
+/* .nav-width{
+    width: 65%;
+} */
 
 .nav-link{
     color: black;
@@ -160,9 +177,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-.custom-nav{
-    position: relative;
-}
 .btn-anim:hover{
     transform: scale(0.93);
 }
@@ -179,6 +193,9 @@ html {
 }
 .get-text{
     font-size: 1.75rem;
+}
+.form-top{
+    padding-top: 0;
 }
 
 /* Large Screen */
@@ -239,6 +256,16 @@ html {
     .owl-nav {
         bottom: -4rem; 
     }
+    .custom-nav{
+        position:absolute;
+        top: 3rem;
+        right: 0;
+        background-color: #000;
+        z-index: 10;
+    }
+    .nav-link{
+        color: white;
+    }
     
 }
 
@@ -254,12 +281,18 @@ html {
         height: 100%;
         width: 100%;
     }
+    .form-top{
+        padding-top: 4rem;
+    }
 }
 
 /* Small Screen */
 @media screen and (max-width: 576px) {
     .form-width {
         width: 100%;
+    }
+    .form-top{
+        padding-top: 5rem;
     }
     .register{
         font-size: 0.5rem;
