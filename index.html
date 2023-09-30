@@ -65,7 +65,8 @@
                             <i class="fa-solid fa-bars h4 m-0"></i>
                         </button>
                         <nav2 id="navbar" class="collapsed d-flex flex-column">
-                            <div class="d-flex flex-column flex-sm-row justify-content-between w-100 align-items-center px-2">
+                            <div
+                                class="d-flex flex-column flex-sm-row justify-content-between w-100 align-items-center px-2">
                                 <button id="closeButton"
                                     class="bg-transparent border-0 p-0 m-2 d-flex justify-content-center ali"
                                     style="width: fit-content;" type="button">
@@ -598,6 +599,8 @@
             loop: true,
             margin: 40,
             dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
             nav: true,
             navText: ["<i class='fa-solid fa-arrow-right left-arrow'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
             responsive: {
@@ -605,7 +608,8 @@
                     items: 1
                 },
                 600: {
-                    items: 1
+                    items: 1,
+                    autoplayTimeout: 2000,
                 },
                 1000: {
                     items: 3

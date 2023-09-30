@@ -227,12 +227,6 @@ nav2:not(.collapsed) {
     display: none;
 }
 
-#toggleButton {
-    /* position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 3; */
-}
 
 
                                                     /* MEDIA QUERIES */
@@ -379,7 +373,7 @@ nav2:not(.collapsed) {
         padding: 4rem 2rem;
     }
     .owl-nav {
-        bottom: 0; 
+        display: none; 
     }
     .reviw-head{
         font-size: 1.6rem;
