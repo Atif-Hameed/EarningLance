@@ -60,36 +60,40 @@
                         </a>
                     </div>
 
-                    <!-- <div class="d-lg-none d-block">
-                        <button class="nav-btn p-0" type="button" id="toggleButton">
-                            <i class="fa-solid fa-bars"></i>
+                    <div class="d-lg-none d-block mt-sm-3 mt-2 pt-sm-1 pt-2">
+                        <button id="toggleButton" class="bg-transparent border-0 p-0" type="button">
+                            <i class="fa-solid fa-bars h4 m-0"></i>
                         </button>
-                        <div class="nav-bar" id="hiddenElement">
-                            <ul class="navbar-nav mr-0">
-                                <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#home">Home </a>
-                                </li>
-                                <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#about">About </a>
-                                </li>
-                                <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#plans">Plans </a>
-                                </li>
-                                <li class="nav-item  mx-2">
-                                    <a class="nav-link" href="#contact">Contact </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
+                        <nav2 id="navbar" class="collapsed d-flex flex-column">
+                            <div class="d-flex flex-column flex-sm-row justify-content-between w-100 align-items-center px-2">
+                                <button id="closeButton"
+                                    class="bg-transparent border-0 p-0 m-2 d-flex justify-content-center ali"
+                                    style="width: fit-content;" type="button">
+                                    <i class="fa-solid fa-xmark h4 m-0" style="color: #000;"></i>
+                                </button>
+                                <div class="d-flex align-items-center mt-lg-0 mt-2 pt-sm-0 pt-1">
+                                    <img src="./assets/logo.svg" style="width: 1.5rem;" alt="">
+                                    <p class="ml-1 h5 mt-1 font-weight-bold">Earninglance</p>
+                                </div>
+                            </div>
+                            <div class="pt-5 h-100 d-flex flex-column" style="">
+                                <a class="nav-link my-2 text-dark align-self-center" href="#home">Home </a>
+                                <a class="nav-link my-2 text-dark align-self-center" href="#about">About </a>
+                                <a class="nav-link my-2 text-dark align-self-center" href="#plans">Plans </a>
+                                <a class="nav-link my-2 text-dark align-self-center" href="#contact">Contact </a>
+                            </div>
+                        </nav2>
+                        <div id="overlay" class="hidden"></div>
+                    </div>
 
-                    <nav class=" navbar navbar-expand-lg p-0 mt-lg-0 mt-2 pt-lg-0 pt-2">
+                    <nav class=" d-lg-block d-none navbar navbar-expand-lg p-0 mt-lg-0 mt-2 pt-lg-0 pt-2">
                         <button class="navbar-toggler custom-toggle p-0" type="button" data-toggle="collapse"
                             data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars"></i>
                         </button>
 
-                        <div class="collapse navbar-collapse custom-nav" id="navbarText">
+                        <div class="collapse navbar-collapse " id="navbarText">
                             <ul class="navbar-nav mr-0">
                                 <li class="nav-item  mx-2">
                                     <a class="nav-link" href="#home">Home </a>
@@ -609,26 +613,36 @@
             }
         })
     </script>
-    <script>
-        // JavaScript to toggle the element's position
-        const toggleButton = document.getElementById('toggleButton');
-        const hiddenElement = document.getElementById('hiddenElement');
 
-        let isHidden = true;
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const closeButton = document.getElementById('closeButton');
+        const navbar = document.getElementById('navbar');
+        const overlay = document.getElementById('overlay');
 
         toggleButton.addEventListener('click', () => {
-            if (isHidden) {
-                // Show the hidden element
-                hiddenElement.style.right = '0';
-                hiddenElement.style.width = '0';
-            } else {
-                // Hide the element again
-                hiddenElement.style.right = '-25rem';
-                hiddenElement.style.width = '100%';
-            }
-            isHidden = !isHidden; // Toggle the state
+            navbar.classList.contains('collapsed')
+            navbar.classList.remove('collapsed');
+            overlay.classList.remove('hidden');
+
         });
+        closeButton.addEventListener('click', () => {
+            navbar.classList.add('collapsed')
+            overlay.classList.add('hidden')
+        })
+
+        overlay.addEventListener('click', () => {
+            navbar.classList.add('collapsed');
+            overlay.classList.add('hidden');
+        });
+
+        // Prevent clicks on the navbar from closing it
+        // navbar.addEventListener('click', (event) => {
+        //     event.stopPropagation();
+        // });
+
     </script>
+
 </body>
 
 </html>
